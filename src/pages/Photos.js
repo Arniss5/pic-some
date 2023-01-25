@@ -6,10 +6,9 @@ import Image from '../components/Image'
 
 function Photos() {
 
-    const allPhotos = React.useContext(Context)
+    const {photos} = React.useContext(Context)
 
-    console.log(allPhotos.photos)
-    const photoEls = allPhotos.photos.map((photo, i) => (
+    const photoEls = photos.map((photo, i) => (
         <Image key={photo.id} img={photo} className={getClass(i)} />
     ))
 
