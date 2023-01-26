@@ -4,6 +4,7 @@ const Context = React.createContext()
 function ContextProvider(props) {
 
     const [photos, setPhotos] = React.useState([])
+    const [cartItems, setCartItems] = React.useState([])
 
     React.useEffect(()=> {
         fetch("https://raw.githubusercontent.com/bobziroll/scrimba-react-bootcamp-images/master/images.json")
