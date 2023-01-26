@@ -11,7 +11,6 @@ function ContextProvider(props) {
             .then(data => setPhotos(data))
     }, [])
 
-    console.log(photos)
 
     function toggleFavourite(id) {
         setPhotos(oldPhotos => {
